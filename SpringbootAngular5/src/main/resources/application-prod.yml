@@ -1,0 +1,16 @@
+#logging:
+#  path: /user/local/log
+#  level:
+#    com:
+#      favorites: DEBUG
+#    org:
+#      springframework:
+#        web: info
+        
+server:
+  port: 8090
+  context-path: /demo
+
+gril: 
+  girlname: Julice
+  age: 24
