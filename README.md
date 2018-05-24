@@ -5,5 +5,6 @@ To study git
 
 added by weixingyue
 
-weixingyue added
+weixing added
+
 
