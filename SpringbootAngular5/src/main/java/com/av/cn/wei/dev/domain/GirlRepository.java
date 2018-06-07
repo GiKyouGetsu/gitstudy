@@ -1,0 +1,13 @@
+package com.av.cn.wei.dev.domain;
+
+import java.util.List;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.av.cn.wei.dev.pojo.Girl;
+
+public interface GirlRepository  extends JpaRepository<Girl, Integer>{
+
+	// 通过年龄来查询
+	public List<Girl> findByAge(Integer age);
+}

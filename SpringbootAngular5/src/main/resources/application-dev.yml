@@ -1,0 +1,53 @@
+#logging:
+#  path: /user/local/log
+#  level:
+#    com:
+#      favorites: DEBUG
+#    org:
+#      springframework:
+#        web: info
+server:
+  port: 8070
+  tomcat:
+    uri-encoding: UTF-8  
+
+gril: 
+  girlname: Julice
+  age: 24
+  
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/breezecallerdb
+    driver-class-name: org.postgresql.Driver
+    username: postgres
+    password: Avaya123#
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  http:
+    encoding:
+      force: true
+      charset: UTF-8
+      enabled: true
+security:
+  user:
+    password: password
+    name: weixingyue
+  ignored:
+  - "*.bundle.*"
+  
+  
+  
+  
+  
+vpConfig: 
+  configSetName: FreeSpeechBFS
+  endpoint: http://10.133.161.12/SecuritySuite/FreeSpeechServer.asmx
+  ntlm: 
+    username: Administrator
+    password: Sh0wcas3
+    domain: \\W2K12-NSS
+    port: 80
+    hostName: 10.133.161.12
+    

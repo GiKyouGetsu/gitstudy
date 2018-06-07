@@ -1,0 +1,21 @@
+<h2>坐席状态 全国</h2>
+<table class="table table-striped">
+  <thead class="thead-light">
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">坐席分布</th>
+      <th scope="col">坐席总数</th>
+      <th scope="col">空闲作席总数</th>
+      <th scope="col">通话坐席数量</th>
+    </tr>
+  </thead>
+  <tbody class="table-hover">
+    <tr *ngFor="let mkAt of MockAgentState; index as i" >
+      <td>{{i + 1}}</td>
+      <td>{{mkAt.location}}</td>
+      <td>{{mkAt.total}}</td>
+      <td>{{mkAt.freeAgent}}</td>
+      <td>{{mkAt.online}}</td>
+    </tr>     
+  </tbody>
+</table>

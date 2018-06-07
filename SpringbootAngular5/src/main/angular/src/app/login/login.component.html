@@ -1,0 +1,18 @@
+
+<div class="raw">
+  <div class="col-md-12">
+    <div class="col-md-3 col-md-offset-4">
+      <h2 class="form-signin-heading">CRM System</h2>
+      <label for="inputEmail" class="sr-only">CRM Login ID</label>
+      <input type="text" id="inputEmail" class="form-control" placeholder="CRM Login ID" required autofocus #email>
+      <label for="inputPassword" class="sr-only">Password</label>
+      <input type="password" id="inputPassword" class="form-control" placeholder="CRM Password" required #password>
+      <div class="checkbox">
+        <label>
+          <span></span>
+        </label>
+      </div>
+      <button class="btn btn-lg btn-primary btn-block" (click)="login(email.value, password.value)" [disabled]="IframeState">Sign in</button>
+    </div>
+  </div>
+</div>
